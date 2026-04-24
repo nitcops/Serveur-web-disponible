@@ -24,7 +24,7 @@ Voici l'organisation logique du projet :
 
     Réseau Docker Isolé : Un réseau privé (projet-infra) permettant la communication interne entre les composants.
 
-    2 Conteneurs Web (Nginx/PHP) : Serveurs applicatifs redondés qui traitent les requêtes.
+    2 Conteneurs Web (Nginx) : Serveurs applicatifs redondés qui traitent les requêtes.
 
 Compétences validées
 

@@ -35,5 +35,7 @@ et le load balanceur switch de site automatiquement vers le site B, le site est 
 
 <img width="464" height="109" alt="image" src="https://github.com/user-attachments/assets/544c0b7c-1ad7-4275-ba7e-9e55f15fe082" />
 
+maintenaont passons à mariaDB 
+
 
 

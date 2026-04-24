@@ -9,3 +9,13 @@ On utilise cette architecture pour trois raisons majeures :
     La Disponibilité (Le Load Balancing) : Si tu dois mettre à jour ton site, tu peux couper le Conteneur_A, le mettre à jour, pendant que le Conteneur_B continue de répondre aux utilisateurs. Zéro interruption de service.
 
     L'Agilité (Docker) : Demain, si ton patron veut passer d'un Wiki à un autre outil, tu as juste à changer l'image Docker. Tu ne casses pas tout ton serveur Linux.
+
+Le schéma de mon projet
+
+Voici à quoi ressemble mon projet :
+
+    Nginx Load Balancer : Reçoit le trafic (HTTPS).
+
+    2 Conteneurs Web (Nginx + PHP-FPM).
+
+    1 Serveur MySQL : La base de données.

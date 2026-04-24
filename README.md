@@ -16,6 +16,4 @@ Voici à quoi ressemble mon projet :
 
     Nginx Load Balancer : Reçoit le trafic (HTTPS).
 
-    2 Conteneurs Web (Nginx + PHP-FPM).
-
-    1 Serveur MySQL : La base de données.
+    2 Conteneurs Web (Nginx).

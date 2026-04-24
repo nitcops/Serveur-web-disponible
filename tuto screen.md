@@ -27,3 +27,13 @@ nous comme donc sur le site A
 
 <img width="476" height="108" alt="image" src="https://github.com/user-attachments/assets/d6c05c95-7fa8-457b-9dd8-a91756790dae" />
 
+je stop le site A avec docker stop web1
+
+<img width="894" height="288" alt="image" src="https://github.com/user-attachments/assets/79bdc19c-9144-4eb1-8401-27b6cf28cd8c" />
+
+et le load balanceur switch de site automatiquement vers le site B, le site est donc toujours disponible grâce au nginx qui fait load balancing
+
+<img width="464" height="109" alt="image" src="https://github.com/user-attachments/assets/544c0b7c-1ad7-4275-ba7e-9e55f15fe082" />
+
+
+

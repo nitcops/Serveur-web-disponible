@@ -1,19 +1,37 @@
-# Déploiement d'une architecture Web résiliente par conteneurisation et équilibrage de charge.
+# Titre du Projet : Déploiement d'une architecture Web résiliente par conteneurisation et équilibrage de charge
 
-Petit projet ou je montre comment rendre des serveur web hautement disponible, sécurisé et standardisé (agile)
+# Description :
 
-On utilise cette architecture pour trois raisons majeures :
+Réalisation d'une infrastructure permettant de rendre des serveurs web hautement disponibles, sécurisés et standardisés (approche agile).
 
-    La Sécurité (Le Reverse Proxy) : Nginx sert de "bouclier". C'est lui qui gère le SSL (HTTPS) et qui filtre les requêtes avant de les envoyer aux conteneurs. Si un conteneur plante, ton entrée reste propre.
+Pourquoi cette architecture ? (3 piliers majeurs)
 
-    La Disponibilité (Le Load Balancing) : Si tu dois mettre à jour ton site, tu peux couper le Conteneur_A, le mettre à jour, pendant que le Conteneur_B continue de répondre aux utilisateurs. Zéro interruption de service.
+#  La Sécurité (Reverse Proxy) :
+    
+    Nginx sert de "bouclier". C'est lui qui gère le chiffrement SSL (HTTPS) et qui filtre les requêtes avant de les transmettre aux conteneurs. Si un conteneur est corrompu ou tombe en panne, le point d'entrée reste sécurisé et propre.
 
-    L'Agilité (Docker) : Demain, si ton patron veut passer d'un Wiki à un autre outil, tu as juste à changer l'image Docker. Tu ne casses pas tout ton serveur Linux.
+#    La Disponibilité (Load Balancing) :
+    Mise en place d'une répartition de charge. En cas de maintenance ou de mise à jour, il est possible de couper le Conteneur A sans interrompre le service, car le Conteneur B continue de répondre aux utilisateurs. L'objectif est le zéro interruption de service.
 
-Le schéma de mon projet
+#    L’Agilité (Docker) :
+    Grâce à la conteneurisation, l'infrastructure est standardisée. Si le besoin métier évolue (par exemple, passer d'un Wiki à un outil de gestion de parc comme GLPI), il suffit de changer l'image Docker sans impacter la configuration du serveur hôte Linux.
 
-Voici à quoi ressemble mon projet :
+Schéma de l’infrastructure
 
-    Nginx Load Balancer : Reçoit le trafic (HTTPS).
+Voici l'organisation logique du projet :
 
-    2 Conteneurs Web (Nginx).
+    Nginx Load Balancer (Hôte) : Point d'entrée unique qui reçoit le trafic sécurisé (Port 443).
+
+    Réseau Docker Isolé : Un réseau privé (projet-infra) permettant la communication interne entre les composants.
+
+    2 Conteneurs Web (Nginx/PHP) : Serveurs applicatifs redondés qui traitent les requêtes.
+
+Compétences validées
+
+    Système : Administration Linux (Debian/Ubuntu).
+
+    Réseau : Reverse Proxy, Load Balancing (Round Robin), redirection HTTP vers HTTPS.
+
+    Virtualisation : Docker (Images, Conteneurs, Réseaux).
+
+    Sécurité : Gestion des certificats SSL/TLS.

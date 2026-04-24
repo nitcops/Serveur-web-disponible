@@ -23,3 +23,7 @@ on retourne sur vim /etc/nginx/sites-available/default pour rajouter le certific
 
 <img width="867" height="495" alt="image" src="https://github.com/user-attachments/assets/24950c26-c7d1-44fa-8032-219b3226babd" />
 
+nous comme donc sur le site A
+
+<img width="476" height="108" alt="image" src="https://github.com/user-attachments/assets/d6c05c95-7fa8-457b-9dd8-a91756790dae" />
+

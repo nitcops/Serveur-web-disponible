@@ -26,7 +26,7 @@ Voici l'organisation logique du projet :
 
     2 Conteneurs Web (Nginx) : Serveurs applicatifs redondés qui traitent les requêtes.
 
-Compétences validées
+Compétences 
 
     Système : Administration Linux (Debian/Ubuntu).
 

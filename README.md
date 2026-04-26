@@ -1,10 +1,10 @@
-# Titre du Projet : Déploiement d'une architecture Web résiliente par conteneurisation et équilibrage de charge
+# Titre du Projet : Architecture Web résiliente par conteneurisation et équilibrage de charge/reverse proxy
 
 # Description :
 
-Réalisation d'une infrastructure permettant de rendre des serveurs web hautement disponibles, sécurisés et standardisés (approche agile).
+Mise en place d'un Reverse Proxy Nginx configuré pour faire du Load Balancing. Cette architecture permet non seulement de sécuriser l'accès au service, mais aussi de garantir la disponibilité en répartissant la charge sur plusieurs conteneurs.
 
-Pourquoi cette architecture ? (3 piliers majeurs)
+Pourquoi cette architecture ? (3 piliers)
 
 #  La Sécurité (Reverse Proxy) :
     

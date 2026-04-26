@@ -18,7 +18,7 @@ Pourquoi cette architecture ? (3 piliers)
 #    L’Agilité (Docker) :
     Grâce à la conteneurisation, l'infrastructure est standardisée. Si le besoin métier évolue (par exemple, passer d'un Wiki à un outil de gestion de parc comme GLPI), il suffit de changer l'image Docker sans impacter la configuration du serveur hôte Linux.
 
-Schéma de l’infrastructure
+Schéma de l’infrastructure :
 
 Voici l'organisation logique du projet :
 
@@ -28,7 +28,7 @@ Voici l'organisation logique du projet :
 
     2 Conteneurs Web (Nginx) : Serveurs applicatifs redondés qui traitent les requêtes.
 
-Compétences 
+Compétences :
 
     Système : Administration Linux (Debian/Ubuntu).
 

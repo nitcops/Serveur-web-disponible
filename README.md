@@ -4,6 +4,8 @@
 
 Mise en place d'un Reverse Proxy Nginx configuré pour faire du Load Balancing. Cette architecture permet non seulement de sécuriser l'accès au service, mais aussi de garantir la disponibilité en répartissant la charge sur plusieurs conteneurs.
 
+tuto MEP : https://github.com/nitcops/LoadBalancingNginx-DockerWeb/blob/main/tuto%20screen.md
+
 Pourquoi cette architecture ? (3 piliers)
 
 #  La Sécurité (Reverse Proxy) :
